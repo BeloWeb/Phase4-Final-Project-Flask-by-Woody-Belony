@@ -41,7 +41,7 @@ moviewebapp/
 
 1. Clone the repository:
    ```
-   git clone git@github.com:BeloWeb/Phase4-Final-Project-Flask-by-Woody-Belony.git   ```
+   git clone git@github.com:BeloWeb/Phase4-Final-Project-Flask-by-Woody-Belony.git
 
 2. Create and activate a virtual environment (optional but recommended):
    ```
