@@ -1,4 +1,4 @@
-# MovieWeb App
+# MOVIE ALL TIME - A WEB APP BY WOODY BELONY
 
 A Flask-based web application for managing movie collections for multiple users. The app allows users to add, update, and delete movies from their personal collections, with movie data automatically fetched from the OMDb API.
 
