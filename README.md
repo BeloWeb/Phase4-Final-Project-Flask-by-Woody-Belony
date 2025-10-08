@@ -41,9 +41,7 @@ moviewebapp/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/moviewebapp.git
-   cd moviewebapp
-   ```
+   git clone git@github.com:BeloWeb/Phase4-Final-Project-Flask-by-Woody-Belony.git   ```
 
 2. Create and activate a virtual environment (optional but recommended):
    ```
@@ -59,7 +57,7 @@ moviewebapp/
    pip install flask flask-sqlalchemy requests
    ```
 
-4. Set up the OMDb API key (current key: 5429604c)
+4. Set up the OMDb API key (current key: e6ce9124)
    - If you prefer to use your own API key, you can get one at [omdbapi.com](http://www.omdbapi.com/)
    - Replace the API key in `app.py`
 
@@ -72,7 +70,7 @@ moviewebapp/
 
 2. Open your web browser and navigate to:
    ```
-   http://127.0.0.1:5000
+   http://127.0.0.1:5001
    ```
 
 ## Usage
