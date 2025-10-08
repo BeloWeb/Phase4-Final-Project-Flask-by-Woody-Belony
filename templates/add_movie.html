@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Add Movie - MovieWeb App{% endblock %}
+
+{% block content %}
+    <h1>Add Movie for {{ user.username }}</h1>
+    
+    <form method="POST" class="movie-form">
+        <div class="form-group">
+            <label for="name">Movie Name:</label>
+            <input type="text" id="name" name="name" required autofocus
+                   placeholder="Enter movie name to search on OMDb">
+        </div>
+        
+        <button type="submit" class="btn btn-success">
+            <i class="fas fa-search"></i> Search & Add Movie
+        </button>
+    </form>
+    
+    <a href="{{ url_for('user_movies', user_id=user.id) }}" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Movies
+    </a>
+{% endblock %}

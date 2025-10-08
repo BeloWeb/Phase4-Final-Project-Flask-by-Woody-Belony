@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Update Movie - MovieWeb App{% endblock %}
+
+{% block content %}
+    <h1>Update Movie for {{ user.username }}</h1>
+
+    <form method="POST" class="movie-form">
+        <div class="form-group">
+            <label for="name">Movie Name:</label>
+            <input type="text" id="name" name="name" required autofocus
+                   value="{{ movie.name }}" placeholder="Enter movie name">
+        </div>
+
+        <div class="form-group">
+            <label for="director">Director:</label>
+            <input type="text" id="director" name="director" 
+                   value="{{ movie.director }}" placeholder="Enter director name">
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" 
+                   value="{{ movie.year }}" placeholder="Enter release year">
+        </div>
+
+        <div class="form-group">
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" step="0.1" min="0" max="10" 
+                   value="{{ movie.rating }}" placeholder="Enter rating (0-10)">
+        </div>
+
+        <button type="submit" class="btn btn-success">
+            <i class="fas fa-save"></i> Update Movie
+        </button>
+    </form>
+
+    <a href="{{ url_for('user_movies', user_id=user.id) }}" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Movies
+    </a>
+{% endblock %}
